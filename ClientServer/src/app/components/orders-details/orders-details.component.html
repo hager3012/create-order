@@ -1,0 +1,24 @@
+<section class="">
+  <h1 class="text-center mt-3" >{{'orderDetails.title'| translate}}</h1>
+  <form class="container col-10 mt-4" [formGroup]="orderDetailsForm" >
+    <mat-form-field class="w-100 " appearance="outline">
+      <mat-label >{{'orderDetails.productName'| translate}}</mat-label>
+      <input matInput formControlName="productName">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-100 ">
+      <mat-label >{{'orderDetails.quantity'| translate}}</mat-label>
+      <input matInput type="number" formControlName="quantity">
+    </mat-form-field>
+    <mat-form-field floatLabel="always" appearance="outline" class="w-100 ">
+      <mat-label >{{'orderDetails.price'| translate}}</mat-label>
+      <input matInput type="number" class="example-right-align" placeholder="0" formControlName="price">
+      <span matTextPrefix>$&nbsp;</span>
+      <span matTextSuffix>.00</span>
+    </mat-form-field>
+    <div class="example-button-row text-center m-3 d-flex flex-row">
+      <button mat-raised-button color="primary" class="w-75 mb-2 me-2 font-md font-size btn" (click)="addOrderDetail()">{{'orderDetails.btnAddOrderDetails'| translate}}</button>
+      <button mat-stroked-button  class="w-50 font-md font-size btn-success" (click)="Save()" >{{'orderDetails.btnSave'| translate}}</button>
+    </div>
+  </form>
+
+</section>

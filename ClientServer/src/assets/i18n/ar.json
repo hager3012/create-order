@@ -1,0 +1,27 @@
+{
+  "nav":{
+    "lang":"اللغة"
+  },
+  "CreateOrder":{
+    "title":"إنشاء طلب",
+    "customerName":"إسم العميل",
+    "date":"التاريخ",
+    "btn":"اضافة تفاصيل الطلب"
+  },
+  "orderDetails":{
+    "title":"اضافة تفاصيل الطلب",
+    "productName":"إسم المنتج",
+    "quantity":"الكمية",
+    "price":"تاسعر",
+    "btnAddOrderDetails":"اضافة المنتج",
+    "btnSave":"حفظ"
+  },
+  "toasterSuccess":{
+    "val":"نجاح",
+    "message":"تم إرسال الطلب بنجاح"
+  },
+  "toasterErorr":{
+    "val":"خطأ",
+    "message":"فشل إرسال الطلب"
+  }
+}

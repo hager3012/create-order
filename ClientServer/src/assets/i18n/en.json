@@ -1,0 +1,27 @@
+{
+  "nav":{
+    "lang":"Language"
+  },
+  "CreateOrder":{
+    "title":"Create Order",
+    "customerName":"Customer Name",
+    "date":"Choose a date",
+    "btn":"Add Product"
+  },
+  "orderDetails":{
+    "title":"Add Order Details",
+    "productName":"Product Name",
+    "quantity":"Quantity",
+    "price":"Price",
+    "btnAddOrderDetails":"Add Product",
+    "btnSave":"Save"
+  },
+  "toasterSuccess":{
+    "val":"Success",
+    "message":"Order Created Success"
+  },
+  "toasterErorr":{
+    "val":"Erorr",
+    "message":"Order Not Created"
+  }
+}

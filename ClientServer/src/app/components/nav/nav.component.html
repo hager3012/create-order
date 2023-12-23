@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" [class.rtl]="isArabic">
+  <div class="container-fluid">
+    <div class=" d-flex flex-row align-items-center  ms-auto justify-content-center">
+      <h5 class="w-100">{{'nav.lang'| translate}}</h5>
+      <select class="form-select  ms-1" aria-label="Default select example"  (change)="changeLanguage($event)">
+        <option selected value="en" [selected]="selectedLanguage == 'en' ">English</option>
+        <option value="ar" [selected]="selectedLanguage == 'ar' ">عربي</option>
+      </select>
+    </div>
+
+  </div>
+</nav>

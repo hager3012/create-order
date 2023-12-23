@@ -1,0 +1,20 @@
+<section class="form row" >
+  <h1 class="text-center mt-3"  >{{'CreateOrder.title'| translate}}</h1>
+  <form class="container col-6 mt-4" [formGroup]="form" (ngSubmit)="openDialog(form)">
+    <mat-form-field class="w-100 " appearance="outline">
+      <mat-label >{{'CreateOrder.customerName'| translate}}</mat-label>
+      <input matInput formControlName="customerName">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-100 ">
+      <mat-label >{{'CreateOrder.date'| translate}}</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="orderDate">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <div class="example-button-row text-center m-5">
+      <button mat-raised-button color="primary" class="w-75 font-md font-size" >{{'CreateOrder.btn'| translate}}</button>
+    </div>
+  </form>
+
+</section>
